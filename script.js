@@ -71,4 +71,25 @@ $("#button15").click(function(){
         height: "200px"
     }, 1000);
 });
+$("#button16").click(function() {
+    $("#box4")
+      .animate({ left: "200px" }, 1000)        
+      .animate({ top: "200px" }, 1000)        
+      .animate({ width: "50px", height: "50px" }, 1000) 
+      .animate({ left: "0px", top: "0px", width: "100px", height: "100px" }, 1000); 
+  });
+$("#button17").click(function() {
+    $("#box5").animate({
+      left: "300px",      
+      top: "150px",       
+      width: "200px",     
+      height: "200px",     
+      opacity: 0.3        
+    }, 1000);              
+  });
 
+// for my final
+ $(".title").click(function() {
+    $(this).next(".content").slideToggle(400);
+    $(".content").not($(this).next()).slideUp();  
+  });
